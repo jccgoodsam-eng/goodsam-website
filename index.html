@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goodsam Management Consultancy</title>
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --navy-soft: #1f3a5f;
+      --blue-accent: #4a6fa5;
+      --white: #ffffff;
+      --gray: #f5f7fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e6e9ef;
+      padding: 24px 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 48px;
+    }
+
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: var(--navy-soft);
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--navy);
+    }
+
+    section {
+      padding: 80px 64px;
+    }
+
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 1px solid #e6e9ef;
+      padding: 32px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    .card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 1px solid var(--navy);
+      color: var(--white);
+      background: var(--navy);
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    footer {
+      background: var(--white);
+      border-top: 1px solid #e6e9ef;
+      padding: 40px 64px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--navy-soft);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Goodsam Management Consultancy Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="founders.html">Meet the Founders</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#values">Values</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="founders">
+  <h3>Meet the Founders</h3>
+  <div class="services">
+    <div class="card">
+      <img src="jelyn.jpg" alt="Jelyn Cerbolles" />
+      <h4>Jelyn Cerbolles</h4>
+      <p>
+        Co-Founder & Head of Finance and Accounting<br /><br />
+        Jelyn brings deep expertise in finance and accounting advisory for startups and growth-stage
+        companies. She focuses on financial strategy, controls, reporting, and decision support—helping
+        founders gain clarity, maintain discipline, and scale responsibly.
+        <br /><br />
+        <a href="https://www.linkedin.com/in/jelyncerbolles/?originalSubdomain=ph" target="_blank">LinkedIn Profile</a>
+      </p>
+    </div>
+    <div class="card">
+      <img src="jowell.jpg" alt="Jowell Marino Marantan" />
+      <h4>Jowell Marino Marantan</h4>
+      <p>
+        Co-Founder & Head of Operations and Human Resources<br /><br />
+        Jowell specializes in building efficient operations and people-first HR frameworks. His work
+        centers on process design, organizational structure, and talent management—enabling teams to
+        operate effectively while preserving culture and accountability.
+        <br /><br />
+        <a href="https://www.linkedin.com/in/jowell-marino-marantan-73829440/?originalSubdomain=ph" target="_blank">LinkedIn Profile</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Goodsam Management Consultancy. All rights reserved.
+</footer>
+
+</body>
+</html>
