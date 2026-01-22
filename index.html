@@ -50,6 +50,41 @@
       color: var(--navy);
     }
 
+    .hero {
+      padding: 100px 64px;
+      background: linear-gradient(180deg, var(--white), var(--gray));
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      color: var(--navy-soft);
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 1px solid var(--navy);
+      color: var(--white);
+      background: var(--navy);
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .cta.secondary {
+      background: transparent;
+      color: var(--navy);
+      margin-left: 16px;
+    }
+
     section {
       padding: 80px 64px;
     }
@@ -58,6 +93,14 @@
       font-size: 32px;
       margin-bottom: 32px;
       text-align: center;
+    }
+
+    .values {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 17px;
+      color: var(--navy-soft);
     }
 
     .services {
@@ -71,8 +114,8 @@
     .card {
       border: 1px solid #e6e9ef;
       padding: 32px;
-      text-align: center;
       background: var(--white);
+      text-align: center;
     }
 
     .card img {
@@ -83,15 +126,18 @@
       margin-bottom: 16px;
     }
 
-    .cta {
-      display: inline-block;
-      padding: 14px 32px;
-      border: 1px solid var(--navy);
-      color: var(--white);
+    .scripture {
       background: var(--navy);
-      text-decoration: none;
-      font-size: 15px;
-      letter-spacing: 0.5px;
+      color: var(--white);
+      text-align: center;
+      padding: 80px 64px;
+    }
+
+    .scripture p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      font-style: italic;
     }
 
     footer {
@@ -110,6 +156,9 @@
       nav {
         margin-top: 16px;
       }
+      .hero h2 {
+        font-size: 34px;
+      }
     }
   </style>
 </head>
@@ -118,42 +167,89 @@
 <header>
   <img src="logo.png" alt="Goodsam Management Consultancy Logo" />
   <nav>
-    <a href="index.html">Home</a>
+    <a href="#about">About</a>
     <a href="founders.html">Meet the Founders</a>
-    <a href="index.html#services">Services</a>
-    <a href="index.html#values">Values</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#values">Values</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section id="founders">
-  <h3>Meet the Founders</h3>
+<section class="hero">
+  <h2>Steady Guidance for Growing Businesses</h2>
+  <p>
+    Goodsam Management Consultancy partners with startups and scaling organizations to bring structure,
+    clarity, and confidence across finance, operations, and human resources. Our approach is grounded in
+    integrity, stewardship, and practical leadership.
+  </p>
+  <a href="#contact" class="cta">Start a Conversation</a>
+  <a href="#services" class="cta secondary">Explore Our Services</a>
+</section>
+
+<section id="about">
+  <h3>Who We Are</h3>
+  <p class="values">
+    Goodsam Management Consultancy is a trusted advisory firm supporting startups and growing businesses
+    during pivotal stages of their journey. Inspired by the biblical story of the Good Samaritan, we step
+    in with practical expertise and genuine care—helping leaders address immediate challenges while
+    building foundations for long-term success.
+  </p>
+</section>
+
+<section id="services">
+  <h3>Our Services</h3>
   <div class="services">
     <div class="card">
-      <img src="jelyn.jpg" alt="Jelyn Cerbolles" />
-      <h4>Jelyn Cerbolles</h4>
+      <h4>Finance Advisory</h4>
       <p>
-        Co-Founder & Head of Finance and Accounting<br /><br />
-        Jelyn brings deep expertise in finance and accounting advisory for startups and growth-stage
-        companies. She focuses on financial strategy, controls, reporting, and decision support—helping
-        founders gain clarity, maintain discipline, and scale responsibly.
-        <br /><br />
-        <a href="https://www.linkedin.com/in/jelyncerbolles/?originalSubdomain=ph" target="_blank">LinkedIn Profile</a>
+        Strategic financial leadership for growing businesses, including budgeting, forecasting, cash
+        flow management, internal controls, and management reporting—designed to support sound decision
+        making and investor readiness.
       </p>
     </div>
     <div class="card">
-      <img src="jowell.jpg" alt="Jowell Marino Marantan" />
-      <h4>Jowell Marino Marantan</h4>
+      <h4>Operations Advisory</h4>
       <p>
-        Co-Founder & Head of Operations and Human Resources<br /><br />
-        Jowell specializes in building efficient operations and people-first HR frameworks. His work
-        centers on process design, organizational structure, and talent management—enabling teams to
-        operate effectively while preserving culture and accountability.
-        <br /><br />
-        <a href="https://www.linkedin.com/in/jowell-marino-marantan-73829440/?originalSubdomain=ph" target="_blank">LinkedIn Profile</a>
+        End-to-end operational support covering process optimization, system implementation, and
+        scalable operating models that allow organizations to grow with structure and efficiency.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Human Resources Advisory</h4>
+      <p>
+        Practical HR solutions including policy development, compensation frameworks, performance
+        management, and people strategy—aligned with both compliance requirements and company culture.
       </p>
     </div>
   </div>
+</section>
+
+<section class="scripture" id="values">
+  <p>
+    “But a Samaritan, as he traveled, came where the man was; and when he saw him, he took pity on him.”
+    <br />— Luke 10:33
+  </p>
+</section>
+
+<section id="contact">
+  <h3>Let’s Work Together</h3>
+  <p class="values">
+    Whether you are launching, scaling, or navigating operational complexity, we are here to help.
+    Share a few details below and we will be in touch.
+  </p>
+
+  <form style="max-width:600px;margin:40px auto;display:grid;gap:16px;">
+    <input type="text" placeholder="Full Name" required style="padding:12px;border:1px solid #ccc;" />
+    <input type="email" placeholder="Email Address" required style="padding:12px;border:1px solid #ccc;" />
+    <input type="text" placeholder="Company Name" style="padding:12px;border:1px solid #ccc;" />
+    <textarea placeholder="How can we help you?" rows="5" style="padding:12px;border:1px solid #ccc;"></textarea>
+    <button type="submit" class="cta" style="width:fit-content;">Submit Inquiry</button>
+  </form>
+
+  <p class="values">
+    <strong>Email:</strong> contact@goodsamconsultancy.com<br />
+    <strong>Service Model:</strong> Remote consulting | Serving US-based and global clients
+  </p>
 </section>
 
 <footer>
